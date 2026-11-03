@@ -31,7 +31,7 @@ echo "Setup javascript..."
 cd src
 mv program.java program.js
 
-echo 'console.log("JavaScript works!");' > program.js
+echo "console.log('JavaScript works!');" > program.js
 node program.js
 
 git add .

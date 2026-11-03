@@ -18,7 +18,7 @@ echo "Welcome to my project" > README.md
 rm -r src/profile
 rm -r "resources/family picture.jpg"
 git add .
-git commit -m "update README.md and remove .gitkeep and family picture.jpg files"   
+git commit -m "update README.md and remove profile and family picture.jpg files"   
 sleep 3
 ls -l resources
 echo "Setup javascript…"

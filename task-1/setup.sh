@@ -23,23 +23,21 @@ git add .
 git commit -m"initial commit"
 sleep 3
 echo "Setup project…"
-echo "Welcome to my project" >> README.md
+echo "Welcome to my project" > README.md
 rm -r src/profile
 cd resources
 rm "family picture.jpg"
 cd ..
 git status
-git add README.md
-git add "resources/family picture.jpg"
+git add .
 git commit -m"Added message to the README.md and deleted an image"
 sleep 3
 ls resources
 mv src/program.java src/program.js
-echo "console.log('JavaScript works!');" >> src/program.js
+echo "console.log('JavaScript works!');" > src/program.js
 node src/program.js
 git status
-git add src/program.js
-git add src/program.java
+git add .
 git commit -m"Renamed program.java and added JavaScript code"
 cd ~
 ls

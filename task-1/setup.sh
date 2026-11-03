@@ -8,7 +8,7 @@ git init
 mkdir -p resources src/database src/profile
 touch README.md settings.conf
 touch "resources/family picture.jpg" resources/icon.png resources/logo.png
-touch src/program.java src/database/.gitkeep src/profile/.gitkeep
+touch src/program.java 
 
 git add .
 git commit -m "initial commit"  

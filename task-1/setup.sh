@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # 1. Print message
 echo "Creating project"
 

@@ -1,9 +1,11 @@
-# 1. Print message
+#!/bin/bash
+
+
 echo "Creating project"
 
-# 2 Create a new folder called project.
+# 2. Create a new folder called project.
 mkdir project
-#3. Create a new git repository inside the folder project
+# 3. Create a new git repository inside the folder project
 cd project
 git init
 
@@ -58,6 +60,6 @@ git add .
 git commit -m "Switched program file to javascript"
 
 # 19. Show the contents
-ls ~
+ls
 # 20. finish
 echo "All done!"

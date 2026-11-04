@@ -1,4 +1,3 @@
-# Write your code here
 echo "Creating project"
 mkdir project
 cd project

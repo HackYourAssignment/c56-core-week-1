@@ -16,7 +16,7 @@ touch src/program.java
 #Second part of task 1
 git add .
 git commit -m "Initial commit"
-sleep 5
+sleep 9
 echo "Setup project..."
 echo "Welcome to my project" > README.md
 rm -r src/profile

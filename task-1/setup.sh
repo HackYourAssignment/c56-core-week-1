@@ -2,7 +2,7 @@ rm -rf project
 
 
 echo "Creating project…"
-sleep 3
+
 mkdir project
 cd project
 git init
@@ -16,3 +16,24 @@ touch src/program.java
 git add .
 git commit -m "initial commit"
 
+sleep 3
+echo "Setup project…"
+echo "Welcome to my project"> README.md
+rm -r src/profile
+rm resources/"family picture.jpg"
+
+git add .
+git commit -m "Add welcome text,delete profile folder and picture file"
+
+sleep 3
+ls resources
+echo "Setup javascript..."
+mv src/program.java src/program.js
+echo "console.log('JavaScript works!');" >  src/program.js
+node src/program.js
+
+git add .
+git commit -m "Rename program.java to program.js then  printing "
+ls~
+
+echo "All done!"

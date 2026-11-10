@@ -33,7 +33,7 @@ ls rescources
 
 echo " Setup javascript..."
 mv src/program.java src/program.js
-echo "console.log("JavaScript works");" >>src/program.js
+echo "console.log('JavaScript works');" >>src/program.js
 
 node src/program.js
 

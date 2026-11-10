@@ -34,6 +34,6 @@ node src/program.js
 
 git add .
 git commit -m "Rename program.java to program.js then  printing "
-ls~
+ls ~
 
 echo "All done!"

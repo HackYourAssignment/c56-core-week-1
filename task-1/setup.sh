@@ -36,7 +36,7 @@ echo "console.log('JavaScript works');" >>src/program.js
 
 node src/program.js
 
-git add
+git add .
 git commit -m "change the java file to javascript file"
 cd
 ls 

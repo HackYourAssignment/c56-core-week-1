@@ -4,6 +4,10 @@ cd project
 touch README.md
 
 git init
+git add .
+git commit -m "initial commit."
+
+echo "Setup project..."
 
 mkdir resources
 cd resources
@@ -12,21 +16,16 @@ touch icon.png
 touch logo.png
 
 cd ..
-touch setting.conf
-
-git add
-git commit -m "project folder created."
-
-echo "Setup project..."
+touch settings.conf
+mkdir src/database src/profile
+touch src/program.java
 
 echo "Welcome to my project" >> README.md
 
-rm -r sprofile
-cd project
-cd resources
-rm 'Family picture.jpg'
+rm -r profile
+rm 'resources/Family picture.jpg'
 
-git add 
+git add .
 git commit -m "new update and remove un wanted files"
 
 ls rescources 

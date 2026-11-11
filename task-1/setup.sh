@@ -2,7 +2,7 @@
 
 echo "Creating project..."
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-mkdir -p "$SCRIPT_DIR/proje\ct"
+mkdir -p "$SCRIPT_DIR/project"
 cd "$SCRIPT_DIR/project" || exit 1
 git init
 mkdir -p resources
@@ -31,7 +31,7 @@ ls resources
 echo "Setup javascript..."
 mv src/program.java src/program.js
 echo  "console.log('JavaScript works!');" > src/program.js
-node src/progam.js
+node src/program.js
 git add -A
 git commit -m "Convert Java to JavaScript"
 sleep 3

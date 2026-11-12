@@ -44,7 +44,7 @@ git add .
 
 git commit -m "Third commit"
 
-ls
+ls ~
 
 echo All done!
 

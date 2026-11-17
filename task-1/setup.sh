@@ -17,7 +17,7 @@ touch logo.png
 
 cd ..
 touch settings.conf
-mkdir src/database src/profile
+mkdir -p src/database src/profile
 touch src/program.java
 
 echo "Welcome to my project" >> README.md
@@ -38,7 +38,6 @@ node src/program.js
 
 git add .
 git commit -m "change the java file to javascript file"
-cd
 ls 
 
 echo "All done!"

@@ -6,8 +6,12 @@ const execPromise = promisify(exec);
 
 const setup = async () => {
   await fs.rm('project', { recursive: true, force: true });
-  await execPromise('git config --global user.name "Tester"');
-  await execPromise('git config --global user.email "tester@example.com"');
+  // The commits setup.sh makes need an identity; environment variables give it
+  // one without writing the user's global git config.
+  Object.assign(process.env, {
+    GIT_AUTHOR_NAME: 'Tester', GIT_AUTHOR_EMAIL: 'tester@example.com',
+    GIT_COMMITTER_NAME: 'Tester', GIT_COMMITTER_EMAIL: 'tester@example.com',
+  });
 }
 
 const checkPath = async (filePath, shouldExist) => {
